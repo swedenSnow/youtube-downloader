@@ -1,0 +1,61 @@
+:root {
+	--primary-color: #ff04d5;
+	--dark-color: #343a40;
+	--background: #eeeeee;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #28a745;
+	--primary-font: 'Courier New', Courier, monospace;
+}
+
+* {
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-size: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	min-width: 100vw;
+	min-height: 100vh;
+	justify-content: center;
+	font-family: var(--primary-font);
+}
+
+.wrapper {
+	padding: 3rem;
+}
+
+h1 {
+	font-size: 3.2rem;
+	margin-bottom: 2rem;
+}
+
+.URL-input,
+.convert-btn {
+	font-size: 1.3em;
+	padding: 5px 10px;
+}
+.URL-input {
+	border-radius: 4px 0px 0px 4px;
+	width: 30em;
+	text-align: left;
+	border: 2px solid var(--background);
+	background: var(--background);
+	outline: none;
+	font-family: var(--primary-font);
+}
+.URL-input:focus {
+	border: 2px solid var(--primary-color);
+}
+.convert-btn {
+	border-radius: 0px 4px 4px 0px;
+	border: 2px solid var(--primary-color);
+	background: var(--primary-color);
+	color: white;
+	font-family: var(--primary-font);
+}
